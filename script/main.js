@@ -209,7 +209,7 @@ const animationTimeline = () => {
       0.2
     )
     .from(
-      ".lydia-dp",
+      ".yzy-dp",
       0.5,
       {
         scale: 3.5,
@@ -221,9 +221,9 @@ const animationTimeline = () => {
       "-=2"
     )
     .from(".hat", 0.5, {
-      x: -100,
-      y: 350,
-      rotation: -180,
+      x: 0, /* 不要太大的水平偏移 */
+      y: -20, /* 让帽子从稍微上方掉下来 */
+      rotation: -15, /* 轻微旋转，不至于太夸张 */
       opacity: 0
     })
     .staggerFrom(
