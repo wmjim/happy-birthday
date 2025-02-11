@@ -220,12 +220,6 @@ const animationTimeline = () => {
       },
       "-=2"
     )
-    .from(".hat", 0.5, {
-      x: 0, /* 不要太大的水平偏移 */
-      y: -20, /* 让帽子从稍微上方掉下来 */
-      rotation: -15, /* 轻微旋转，不至于太夸张 */
-      opacity: 0
-    })
     .staggerFrom(
       ".wish-hbd span",
       0.7,
